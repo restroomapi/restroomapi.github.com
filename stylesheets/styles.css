@@ -1,11 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(fonts/700.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(fonts/400.woff) format('woff');
+}
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
-}
+  font:14px/1.5 Lato, Helvetica, Arial, sans-serif;
+  color:#333;
+  font-weight: normal;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
@@ -58,7 +69,7 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: Consolas, Inconsolata, 'Bitstream Vera Sans Mono', Menlo, Monaco, 'Andale Mono', 'Courier New', monospace;
   color:#333;
   font-size:12px;
 }
@@ -66,8 +77,8 @@ code, pre {
 pre {
   padding:8px 15px;
   background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   overflow-x: auto;
 }
 
@@ -160,7 +171,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:550px;
   float:right;
   padding-bottom:50px;
 }
